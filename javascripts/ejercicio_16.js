@@ -3,8 +3,8 @@
 let porc_mano_obra, porc_costo_produccion, porc_ganancia
 const cantidad_articulos = parseInt(prompt("Ingresa cantidad de articulos:"))
 
-for (let i = 0; i < cantidad_articulos; i++) {
-    const clave = parseInt(prompt(`Cometa #${i+1} - Ingresa una clave del 1 al 6:`)) || 0
+for (let i = 1; i <= cantidad_articulos; i++) {
+    const clave = parseInt(prompt(`Cometa #${i} - Ingresa una clave del 1 al 6:`)) || 0
 
     if (clave === 1) {
         porc_mano_obra = 0.65
@@ -43,7 +43,7 @@ for (let i = 0; i < cantidad_articulos; i++) {
         const costo_produccion = materia_prima + mano_obra + gastos_fabricacion
         const precio_venta = costo_produccion + (costo_produccion * porc_ganancia)
 
-        console.log(`CALCULOS PRECIO DE VENTA PARA EL COMETA #${i+1} DE CLAVE ${clave}`)
+        console.log(`CALCULOS PRECIO DE VENTA PARA EL COMETA #${i} DE CLAVE ${clave}`)
         console.log(`- Materia prima: $${materia_prima}`)
         console.log(`- Mano de obra: $${mano_obra}`)
         console.log(`- Gastos de fabricacion: $${gastos_fabricacion}`)

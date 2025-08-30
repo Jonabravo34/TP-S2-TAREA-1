@@ -2,10 +2,10 @@
 
 const cantidad_edades = parseInt(prompt("Ingresa cantidad de edades a clasificar:"))
 
-for (let i = 0; i < cantidad_edades; i++) {
-    const edad = parseInt(prompt(`Edad #${i+1} - Ingresa una edad:`)) || 0
+for (let i = 1; i <= cantidad_edades; i++) {
+    const edad = parseInt(prompt(`Edad #${i} - Ingresa una edad:`)) || 0
 
-    console.log(`* La edad #${i+1} es:`)
+    console.log(`* La edad #${i} es:`)
 
     if (edad >= 65) {
         console.log("- Adulto mayor")
