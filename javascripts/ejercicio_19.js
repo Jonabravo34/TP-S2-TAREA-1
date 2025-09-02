@@ -3,7 +3,7 @@
 const cantidad_edades = parseInt(prompt("Ingresa cantidad de edades a clasificar:"))
 
 for (let i = 1; i <= cantidad_edades; i++) {
-    const edad = parseInt(prompt(`Edad #${i} - Ingresa una edad:`)) || 0
+    const edad = parseInt(prompt(`Edad #${i} - Ingresa una edad:`))
 
     console.log(`* La edad #${i} es:`)
 

@@ -1,6 +1,6 @@
 // Clasificación de números en un arreglo //
 
-const cant_num = parseInt(prompt("Cuantos valores va tener el arreglo?"))
+const cant_num = parseInt(prompt("Cuantos valores desea clasificar?"))
 let nums = []
 
 for (let i = 1; i <= cant_num; i++) {
