@@ -2,8 +2,9 @@
 
 let porc_mano_obra, porc_costo_produccion, porc_ganancia
 const cantidad_articulos = parseInt(prompt("Ingresa cantidad de articulos:"))
+let i = 1
 
-for (let i = 1; i <= cantidad_articulos; i++) {
+while (i <= cantidad_articulos) {
     const clave = parseInt(prompt(`Cometa #${i} - Ingresa una clave del 1 al 6:`)) || 0
 
     if (clave === 1) {
@@ -32,7 +33,6 @@ for (let i = 1; i <= cantidad_articulos; i++) {
         porc_ganancia = 0.56
     } else {
         alert("Clave ingresada inválida!")
-        i--
     }
 
     if (clave >= 1 && clave <= 6) {
@@ -49,5 +49,7 @@ for (let i = 1; i <= cantidad_articulos; i++) {
         console.log(`- Gastos de fabricacion: $${gastos_fabricacion}`)
         console.log(`- Costo de produccion: $${costo_produccion}`)
         console.log(`* PRECIO DE VENTA: $${precio_venta}`)
+    
+        i++
     }
 }
