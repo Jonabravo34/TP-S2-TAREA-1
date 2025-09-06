@@ -2,7 +2,7 @@
 
 function ejecutar_3() {
     const traje = parseInt(prompt("Ingresa precio del traje:"))
-    let descuento, precio_final = 0
+    let descuento, precio_final
 
     if (traje > 2500) {
         descuento = 15

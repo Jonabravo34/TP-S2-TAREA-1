@@ -35,7 +35,6 @@ function ejecutar_6() {
     if (clave >= 1 && clave <= 6) {
         const materia_prima = parseFloat(prompt("Ingresa el costo de la materia prima:"))
 
-
         const mano_obra = porc_mano_obra * materia_prima
         const gastos_fabricacion = porc_costo_produccion * materia_prima
         const costo_produccion = materia_prima + mano_obra + gastos_fabricacion
