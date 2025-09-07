@@ -1,12 +1,11 @@
-// N artículos de la Fábrica El Cometa //
+// Artículos de la fábrica en arreglo //
 
-function ejecutar_16() {
+function ejecutar_26() {
     let clave, porc_mano_obra, porc_costo_produccion, porc_ganancia, materia_prima, mano_obra, gastos_fabricacion, costo_produccion, precio_venta
-    const cantidad_articulos = parseInt(prompt("Ingresa cantidad de articulos:"))
-    let i = 1
-
-    while (i <= cantidad_articulos) {
-        clave = parseInt(prompt(`#${i} - Ingresa una clave del 1 al 6:`)) || 0
+    const articulos = [[2, 1200], [4, 3500], [1, 700], [6, 5050]]
+    
+    for (let i = 0; i < articulos.length; i++) {
+        clave = articulos[i][0]
 
         if (clave === 1) {
             porc_mano_obra = 0.65
@@ -37,21 +36,19 @@ function ejecutar_16() {
         }
 
         if (clave >= 1 && clave <= 6) {
-            materia_prima = parseFloat(prompt("Ingresa el costo de la materia prima:"))
+            materia_prima = articulos[i][1]
 
             mano_obra = porc_mano_obra * materia_prima
             gastos_fabricacion = porc_costo_produccion * materia_prima
             costo_produccion = materia_prima + mano_obra + gastos_fabricacion
             precio_venta = costo_produccion + (costo_produccion * porc_ganancia)
 
-            console.log(`CALCULOS PRECIO DE VENTA PARA EL COMETA #${i} DE CLAVE ${clave}`)
+            console.log(`CALCULOS PRECIO DE VENTA PARA EL COMETA #${i+1} DE CLAVE ${clave}`)
             console.log(`- Materia prima: $${materia_prima}`)
             console.log(`- Mano de obra: $${mano_obra}`)
             console.log(`- Gastos de fabricacion: $${gastos_fabricacion}`)
             console.log(`- Costo de produccion: $${costo_produccion}`)
             console.log(`* PRECIO DE VENTA: $${precio_venta}`)
-        
-            i++
         }
     }
 }

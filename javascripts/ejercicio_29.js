@@ -1,12 +1,12 @@
-// N personas con clasificación de edades //
+// Clasificación de edades en arreglo //
 
-function ejecutar_19() {
-    const cantidad_edades = parseInt(prompt("Ingresa cantidad de edades a clasificar:"))
+function ejecutar_29() {
+    const edades = [5, 17, 25, 70, 50]
     let edad, clasificacion
 
-    for (let i = 1; i <= cantidad_edades; i++) {
-        edad = parseInt(prompt(`#${i} - Ingresa una edad:`))
-
+    for (let i = 0; i < edades.length; i++) {
+        edad = edades[i]
+        
         if (edad >= 65) {
             clasificacion = "Adulto mayor"
         } else if (edad >= 36) {
