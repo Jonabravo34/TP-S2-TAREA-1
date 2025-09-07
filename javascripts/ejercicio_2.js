@@ -1,3 +1,4 @@
+ejecutar_2()
 let cantidad;
 let lapices;        //DEFINIMOS VARIABLES QUE VAYAMOS A OCUPAR
 let total;

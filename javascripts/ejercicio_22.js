@@ -1,17 +1,19 @@
-const pedidos=[1200,800]
-const costoUnitario=1;
-let i=0;
-while(i<pedidos.length){
-    const cantidad =pedidos[i];
-    let descuento=0;
-    if (cantidad>=1000){
-        descuento=0.15;}
-        else if (cantidad>=500){
-            descuento=0.10;
-        }
-        const base=cantidad*costoUnitario;
-        const total=(base*(1-descuento));
-         console.log(` El pedido de ${cantidad} unidades tiene un precio de ${base} y con el descuento es de  ${total} con un descuento de ${descuento*100}%`)
-        i++; 
+function ejecutar_22(){
+let cantidad;
+let lapices;
+let total;
+const n=[1200,800] //TIENE UN ARREGLO GUARDADO
+let c=0            // PONEMOS EN 0 PORQUE EL ARREGLO EMPIEZA CON 0
+while(c<n.length){
+    let cantidad=n[c]    //ABRIMOS UN WHILE Y EXTRAEMOS EL ARREGLO EN CANTIDAD
+    let costo;
+    if (cantidad>1000){    //ABRIMOS UNA CONDICIONAL PARA PONER LAS CONDICIONES DE LOS LAPICES
+        costo=0.85
+    } else if(cantidad<1000) {
+        costo=0.90
+        
     }
-   
+    let total=costo*cantidad            //POR ULTIMO GUARDAMOS EL VALOR EN LA VARIABLE TOTAL 
+    console.log(`Su compra de ${cantidad} de lapices tiene un costo total de ${total}$`)
+}
+}
