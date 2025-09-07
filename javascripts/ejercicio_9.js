@@ -1,8 +1,15 @@
 // Clasificación de edades //
 
 function ejecutar_9() {
+    // --- Entrada ---
+    // Pide al usuario que ingrese su edad y la guarda como un número.
     const edad = parseInt(prompt("Ingresa edad:"))
 
+    // --- Proceso y Salida ---
+    // Usa una estructura `if-else if` para revisar la edad.
+    // El orden es importante para que la lógica funcione correctamente.
+    // Por ejemplo, si una persona tiene 65 años, la primera condición
+    // se cumple y el código no revisa las demás.
     if (edad >= 65) {
         console.log("Adulto mayor")
     } else if (edad >= 36) {
