@@ -7,7 +7,7 @@ function ejecutar_26() {
     // --- Entrada (predefinida) ---
     // La información de los artículos está guardada en un arreglo llamado `articulos`.
     // Cada elemento del arreglo es otro arreglo con dos valores: [clave, costo de materia prima].
-    const articulos = [[2, 1200], [4, 3500], [1, 700], [6, 5050]]
+    const articulos = [[20, 1200], [4, 3500], [1, 700], [6, 5050]]
     
     // --- Proceso y Salida ---
     // El bucle `for` recorre cada "fila" (cada artículo) del arreglo principal.
@@ -42,7 +42,7 @@ function ejecutar_26() {
             porc_ganancia = 0.56
         } else {
             // En este caso, este `else` no se ejecutará porque los datos son válidos.
-            alert("Clave ingresada inválida!")
+            console.log(`Articulo #${i+1} Clave ingresada inválida!`)
         }
 
         // Si la clave es válida, se realizan los cálculos.
