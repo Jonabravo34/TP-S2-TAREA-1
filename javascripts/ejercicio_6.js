@@ -1,9 +1,17 @@
 // Fábrica El Cometa – precio de venta //
 
 function ejecutar_6() {
+    // --- Entrada ---
+    // Pide al usuario que ingrese una clave y la guarda como un número entero.
     const clave = parseInt(prompt("Ingresa una clave del 1 al 6:"))
-    let porc_mano_obra, porc_costo_produccion, porc_ganancia
 
+    // Se declaran las variables para los porcentajes. No tienen valor inicial.
+    let porc_mano_obra, porc_costo_produccion, porc_ganancia, materia_prima, mano_obra, gastos_fabricacion, costo_produccion, precio_venta
+
+
+    // --- Proceso: Asignación de porcentajes ---
+    // Se usa una estructura `if-else if` para asignar los porcentajes
+    // según el valor de la clave.
     if (clave === 1) {
         porc_mano_obra = 0.65
         porc_costo_produccion = 0.25
@@ -29,17 +37,23 @@ function ejecutar_6() {
         porc_costo_produccion = 0.50
         porc_ganancia = 0.56
     } else {
+        // Si la clave no es válida, se muestra una alerta.
         alert("Clave ingresada inválida!")
     }
 
     if (clave >= 1 && clave <= 6) {
-        const materia_prima = parseFloat(prompt("Ingresa el costo de la materia prima:"))
+        // --- Proceso: Cálculos ---
+        // Este `if` se asegura de que los cálculos solo se hagan si la clave es válida.
+        materia_prima = parseFloat(prompt("Ingresa el costo de la materia prima:"))
 
-        const mano_obra = porc_mano_obra * materia_prima
-        const gastos_fabricacion = porc_costo_produccion * materia_prima
-        const costo_produccion = materia_prima + mano_obra + gastos_fabricacion
-        const precio_venta = costo_produccion + (costo_produccion * porc_ganancia)
+        // Se realizan los cálculos para cada uno de los componentes del costo.
+        mano_obra = porc_mano_obra * materia_prima
+        gastos_fabricacion = porc_costo_produccion * materia_prima
+        costo_produccion = materia_prima + mano_obra + gastos_fabricacion
+        precio_venta = costo_produccion + (costo_produccion * porc_ganancia)
 
+        // --- Salida ---
+        // Muestra todos los resultados en la consola, uno por uno.
         console.log(`CALCULOS PRECIO DE VENTA PARA EL COMETA DE CLAVE ${clave}`)
         console.log(`- Materia prima: $${materia_prima}`)
         console.log(`- Mano de obra: $${mano_obra}`)
