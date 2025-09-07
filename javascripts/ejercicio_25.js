@@ -1,27 +1,28 @@
-const cita=[1,5,9];
+function ejecutar_25(){
+const citas=[1,5,9];                //EN ESTE CASO ES UN ARREGLO LO PONEMOS COMO CONSTANTE PORQUE NO CAMBIA EL VALOR
 costo=0;
 let i=0;
-while(i<cita.length){
-    const citaTotal=cita[i];
-    if(citaTotal>=1 && citaTotal<=3){
-        costo=200;
-        acumulado=(citaTotal*200)
-        console.log(`Su cita N° ${citaTotal} tiene un costo de${costo} y un acumulado de ${acumulado}`)
-    } else if ( citaTotal>=4 && citaTotal<=7){
-        costo=150;
-        acumulado=(3*200)+((citaTotal-3)*150)
-        console.log(`Su cita N°${citaTotal} con un costo de ${costo} y un acumulado de ${acumulado}`)
-    } else if(citaTotal>=8){
-        costo=50;
-        acumulado=(3*200)+(4*150)+((citaTotal-7)*50);
-        console.log(`Su cita N° ${citaTotal} con un costo de ${costo} y un acumulado de ${acumulado}`)
-    } else{
-        console.log("No tiene citas")
-    }
-    i++;
+while(i<citas.length){
+    let cita=citas[i];                                      //PONEMOS UN WHILE Y LLAMAMOS AL ARREGLO CON[I]
+if(cita>=1 && cita<=3){                                     //ABRIMOS UNA CONDICIONAL QUE YA LA TENIAMOS HECHA Y BUENO
+    costo=200                                       // PONEMOS EL VALOR Y EL DEBIDO PROBLEMA 
+  acumulado=(cita*200)
+} else if(cita>=4 && cita<=5){                  
+  costo=150
+  acumulado=(3*200)+((cita-3)*150)
+} else if (cita>=6 && cita<=8){                       
+    costo=100
+    acumulado=(3*200)+(2*150)+((cita-5)*100)
+} else if (cita>=9) {                                      
+    costo=50
+    acumulado=(3*200)+(2*150)+(3*100)+((cita-8)*50)
+    }                                                           //PRESENTAMOS EN UN CONSOLE EL RESULTADO 
+    console.log(`Su cita N°${cita} tiene el costo de ${costo} dolares y su acumulado es de ${acumulado} dolares`)  
 
-    }
+i++;
+}
+ 
 
-    
-    
+}
+
     
