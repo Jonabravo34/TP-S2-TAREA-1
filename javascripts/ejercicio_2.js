@@ -1,6 +1,11 @@
 let cantidad;
-const lapices=0.85
+let lapices;
 let total;
 cantidad=parseFloat(prompt("Ingrese la cantidad de lapices que desea comprar"))
-total=lapices*cantidad
-alert(`El total a pagar es de ${total} dolares`)
+if(cantidad>=1000){
+   costo=0.85
+    console.log(`Total a pagar  ${cantidad*costo}$`)
+} else if (cantidad < 1000){
+    costo=0.90
+    console.log(`Total a pagar ${cantidad*costo} `)
+}
