@@ -1,26 +1,29 @@
-let dia=(prompt("Ingrese un numero del 1 al 7 para saber el dia de la semana"))
-switch(dia){
-    case "1":
-    console.log(" El dia es lunes")
-    break;
-     case "2":
-    console.log("El dia es Martes")
-        break;
-    case "3":
-        console.log("El dia es Miercoles")
-            break;
-        case "4":
-            console.log("El dia es Jueves")
-                break;
-            case "5":
-                console.log("El dia es Viernes")
-                    break;
-                case "6":
-                    console.log("El dia es Sabado")
-                        break;
-                    case "7":
-                    console.log("El dia es Domingo")
-                        break;
-                    default:
-                    console.log("El numero ingresado no es valido")
+function ejercicio_20(){
+debugger
+console.log("DIAS DE LA SEMANA")
+let veces=parseInt(prompt("Ingrese la cantidad de numeros")) //veces(leer)=0 "se preguntan por la cantidad de numers"
+c=1 //se genera un contador
+while (c<=veces){ //condicion para el ciclo
+let num=parseInt(prompt("Ingrese un Numero")) //se pregunta por el numero
+console.log(`Numero ${c} : ${num}`) //se muestra el numero 
+if (num==1){ 
+    console.log("Es Lunes")
+} else if (num==2){
+    console.log("Es Martes")
+} else if (num==3){
+    console.log("Es Miercoles")
+} else if (num==4){
+    console.log("Es Jueves")   
+} else if (num==5){
+    console.log("Es Viernes")  
+} else if (num==6){                         
+    console.log("Es Sabado")   
+} else if (num==7){
+    console.log("Es Domingo")                      
 }
+else {
+    console.log ("dia invalido")
+}
+c++//se incrementa el contador y vuelve al ciclo
+}
+} //SALIDA : Mostrar que dia de la semana es 

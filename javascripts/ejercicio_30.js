@@ -1,23 +1,30 @@
-// Días de la semana en arreglo //
-
-const dias_semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
-let text_dia, num_dia, dias = []
-
-const nums_dia = parseInt(prompt("Cuantos numero desea ingresar?:"))
-
-for (let i = 0; i < nums_dia; i++) {
-    num_dia = parseInt(prompt("Ingresa un numero del 1 al 7:"))
-    dias.push(num_dia)
+function ejercicio_30(){
+debugger
+//ENTRADA
+console.log("DIAS DE LA SEMANA")
+const entrada = [1,2,3,4,5,6,7,8]//Arreglo con todos los numeros asignados
+//PROCESO
+for (i=0 ; i > entrada.length ; i++){ //condicion con ciclo for 
+let num = entrada [i]
+console.log(`Numero ${entrada [i]} :`) //extrae un valor del arreglo
+if (num==1){ //Condicion para determinar un resultado
+    console.log("Es Lunes")
+} else if (num==2){
+    console.log("Es Martes")
+} else if (num==3){
+    console.log("Es Miercoles")
+} else if (num==4){
+    console.log("Es Jueves")   
+} else if (num==5){
+    console.log("Es Viernes")  
+} else if (num==6){                         
+    console.log("Es Sabado")   
+} else if (num==7){
+    console.log("Es Domingo")                      
 }
-
-for (let j = 0; j < dias.length; j++) {
-    num_dia = dias[j]
-
-    if (num_dia >= 1 && num_dia <= 7) {
-        text_dia = dias_semana[num_dia - 1]
-    } else {
-        text_dia = "ERROR"
-    }
-
-    console.log(`${num_dia} -> ${text_dia}`)
+else {
+    console.log("Dia Invalido")
+}
+}
+//SALIDA : Mostrar el dia de la semana o algun otro resultado
 }

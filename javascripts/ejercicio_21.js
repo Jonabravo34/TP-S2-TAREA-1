@@ -1,22 +1,17 @@
-// Clasificación de números en un arreglo //
-
-const cant_num = parseInt(prompt("Cuantos valores desea clasificar?"))
-let nums = []
-let clasificacion
-
-for (let i = 1; i <= cant_num; i++) {
-    let num = parseFloat(prompt(`#${i} - Ingresa numero:`))
-    nums.push(num)
-}
-
-for (let j = 0; j < nums.length; j++) {
-    if (nums[j] > 0) {
-        clasificacion = "positivo"
-    } else if (nums[j] < 0) {
-        clasificacion = "negativo"
+function ejercicio_21(){
+debugger
+//ENTRADA
+const nums = [4,5,0,-1,-2] //Se genera un Arreglo con los datos
+//PROCESO
+for (let i = 0 ; i < nums.length ; i++) { //se genera un ciclo con for
+    if (nums[i] > 0) { //condicional para resolver el ejercicio
+        console.log(`El numero ${nums[i]} es positivo`) 
+    } else if (nums[i] < 0) {
+        console.log(`El numero ${nums[i]} es negativo`)
     } else {
-        clasificacion = "neutro"
+        console.log(`El numero ${nums[i]} es neutro`)
     }
-
-    console.log(`El numero ${nums[j]} es ${clasificacion}`)
 }
+//SALIDA : Mostrar si el numero es positivo , negativo o neutro
+}
+
