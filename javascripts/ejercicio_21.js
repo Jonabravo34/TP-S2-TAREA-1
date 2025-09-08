@@ -1,4 +1,4 @@
-function ejercicio_21(){
+function ejecutar_21(){
 debugger
 //ENTRADA
 const nums = [4,5,0,-1,-2] //Se genera un Arreglo con los datos

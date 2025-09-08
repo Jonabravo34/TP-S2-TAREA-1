@@ -1,4 +1,4 @@
-function ejercicio_7(){
+function ejecutar_7(){
 debugger
 //ENTRADA
 let tipoTarjeta = parseInt( prompt("Ingrese el tipo de tarjeta : ") )//tipoTarjeta(Leer)=0 "Se pregunta por el tipo de tarjeta"

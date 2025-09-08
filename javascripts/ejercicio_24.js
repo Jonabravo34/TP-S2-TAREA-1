@@ -1,4 +1,4 @@
-function ejercicio_24(){
+function ejecutar_24(){
 //ENTRADA
 let tarifa, tipo_viaje, costo_total, costo_persona , minimo , personas //se generan las variables 
 const viajes = [["A", 300, 15], ["B", 60, 30], ["C", 150, 19]] //Arreglo que contiene los viajes

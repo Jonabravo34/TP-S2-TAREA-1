@@ -1,4 +1,4 @@
-function ejercicio_17(){
+function ejecutar_17(){
 debugger
 //ENTRADA
 let clientes= parseInt(prompt("Ingrese la cantidad de clientes : ") ) //clientes(leer)=0 "se ingresa la cantidad de clientes"

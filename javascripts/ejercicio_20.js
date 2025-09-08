@@ -1,4 +1,4 @@
-function ejercicio_20(){
+function ejecutar_20(){
 debugger
 console.log("DIAS DE LA SEMANA")
 let veces=parseInt(prompt("Ingrese la cantidad de numeros")) //veces(leer)=0 "se preguntan por la cantidad de numers"

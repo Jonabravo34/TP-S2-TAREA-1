@@ -1,5 +1,5 @@
 //
-function ejercicio_11(){
+function ejecutar_11(){
 debugger
 //ENTRADA
 let c=1 //Se genera un contador

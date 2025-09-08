@@ -1,4 +1,4 @@
-function ejercicio_1(){
+function ejecutar_1(){
 debugger //Generamos un debugger
 //ENTRADA
 //num(leer)=0

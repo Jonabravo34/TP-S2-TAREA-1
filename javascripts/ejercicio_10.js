@@ -1,4 +1,4 @@
-function ejercicio_10(){
+function ejecutar_10(){
 debugger
 //ENTRADA
 console.log("DIAS DE LA SEMANA") 

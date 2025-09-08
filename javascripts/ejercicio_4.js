@@ -1,4 +1,4 @@
-function ejercicio_4(){
+function ejecutar_4(){
 debugger
 //ENTRADA
 //Se asignan datos a las variables : 

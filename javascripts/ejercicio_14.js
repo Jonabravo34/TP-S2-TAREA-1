@@ -1,4 +1,4 @@
-function ejercicio_14(){
+function ejecutar_14(){
 //ENTRADA
 let = viajes=parseInt(prompt("Ingrese la cantidad de viajes")) //viajes(leer)=0 "se pregunta por la cantidad de viajes"
 let c = 1 //contador para el ciclo

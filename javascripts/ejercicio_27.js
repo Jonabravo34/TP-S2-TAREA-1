@@ -1,4 +1,4 @@
-function ejercicio_27(){
+function ejecutar_27(){
 debugger
 //ENTRADA
 const clientes = [[2,1000][3,1500][1,3000][4,3400]] //arreglo con los datos del cliente
