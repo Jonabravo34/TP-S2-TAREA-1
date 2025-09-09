@@ -1,15 +1,18 @@
-const num=parseInt(prompt("Ingrese la cantidad de numeros que desea evaluar"))
-debugger;
-let contador=0;
-while(contador<num){
-    let numero=parseInt(prompt("Ingrese un numero"))
-if (numero>0){
-    alert("El numero es positivo")}
-    else if  (numero<0){
-        alert("El numero es negativo")
-    }else {
-        alert("El numero es cero")
+//
+function ejecutar_11(){
+    debugger
+    //ENTRADA
+    let c=1 //Se genera un contador
+    let veces=parseInt(prompt("Ingrese la cantidad de numeros")) //veces(leer)=0 "se pregunta por la cantidad de numeros"
+    //PROCESO
+    while (c<=veces){ //Se genera un ciclo con While
+        let num=parseInt(prompt("Ingrese un Numero"))
+        if (num>0){  //condicion
+            console.log(`El numero ${num} es positivo`)
+        } else {
+            console.log (`El numero ${num} es negativo`)
+        }
+        c++ //se incrementa el contador y vuelve a la condicion
     }
-    contador=contador+1;
+    //SALIDA : Mostrar si num es positivo o negativo
 }
-console.log(`Se han evaluado ${num} `)
