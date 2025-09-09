@@ -12,5 +12,7 @@ function ejecutar_22(){
         }
         let total=costo*cantidad            //POR ULTIMO GUARDAMOS EL VALOR EN LA VARIABLE TOTAL 
         console.log(`Su compra de ${cantidad} de lapices tiene un costo total de ${total}$`)
+    c++;
     }
+
 }
