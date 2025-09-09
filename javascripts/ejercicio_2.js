@@ -10,6 +10,6 @@ function ejecutar_2() {
     } else if (cantidad < 1000) {
       costo = 0.90
       total = cantidad * costo
-      console.log(`Total a pagar ${total} `)     //POR ULTIMO HACEMOS LA FORMULA PARA SABER EL VALOR EXACTO
+      console.log(`Total a pagar ${total}$ `)     //POR ULTIMO HACEMOS LA FORMULA PARA SABER EL VALOR EXACTO
     }
 }
