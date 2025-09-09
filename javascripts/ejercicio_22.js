@@ -1,4 +1,5 @@
 function ejecutar_22(){
+  debugger
     const n=[1200,800] //TIENE UN ARREGLO GUARDADO
     let c=0            // PONEMOS EN 0 PORQUE EL ARREGLO EMPIEZA CON 0
     while(c<n.length){
